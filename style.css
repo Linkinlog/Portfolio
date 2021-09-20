@@ -144,7 +144,6 @@ span.scroll {
 }
 
 img.code-img {
-	padding-top: 10vh;
 	height: 450px;
 	min-height: 100%;
 	width: 100%;
@@ -157,9 +156,6 @@ img.code-img {
 		font-family: 'Patrick Hand', cursive;
 		font-size: 2.25rem;
 	};
-	img.code-img {
-		padding-top: 0;
-	}
 	span.scroll {
 		font-size: 1.5rem;
 	}
@@ -168,6 +164,12 @@ img.code-img {
 		display: block;
 		padding-left: 15%;
 	}
+	img.code-img {
+		width: 100%;
+		position: relative;
+		top: -60px;
+	}
+	
 }
 
 /* Start hover float */
