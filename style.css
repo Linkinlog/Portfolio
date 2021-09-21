@@ -365,18 +365,21 @@ img.projectsImage {
 }
 
 /* End Projects portion */
-/* Languages portion */
-#languagesMain {
+/* Skills portion */
+#SkillsMain {
 	background: rgb(244, 162, 97);
-	min-height: 100vh;
+}
+.skillsTitle {
+	font-size: 3rem;
+	padding-top: 5rem;
 }
 
-img.languagesImage {
+img.SkillsImage {
 	height: 50vh;
 	min-height: 50vh;
 	width: 100%;
 }
-/* End Languages portion */
+/* End Skills portion */
 /* Contact portion */
 #contactMain {
 	background: rgb(233, 196, 106);
