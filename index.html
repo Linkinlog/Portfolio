@@ -3,11 +3,13 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Dahlton | Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/images/icon.png" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Patrick+Hand&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/a1829ec498.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -17,7 +19,7 @@
 			<ul onclick="closeNav()">
 				<li><a href="#landing">Home</a></li>
 				<li><a href="#aboutMain">About Me</a></li>
-				<li><a href="#projectsMain">Projects</a></li>
+				<li><a href="#projectsLanding">Projects</a></li>
 				<li><a href="#languagesMain">Languages / technologies</a></li>
 				<li><a href="#contactMain">Contact Me</a></li>
 			</ul>
@@ -25,7 +27,7 @@
 		<!-- Nav collapsed end -->
 		<!-- Nav toggle button -->
 		<div onclick="openNav()" class="navBtnCircle">
-			<span class="navBtn">&#9776;</span>
+			<img src="images/icon.png" alt="" class="navBtn" srcset="" />
 		</div>
 		<!-- Nav toggle button end  -->
 		<!-- To top button -->
@@ -39,15 +41,15 @@
 			<div id="fade"></div>
 			<!-- Landing start -->
 			<div id="landing" class="container-fluid">
-				<div class="row px-4">
+				<div class="row px-4 wrapper">
 					<div class="col-md-7 offset-md-1">
 						<div>
 							<p class="welcomeText">
 								<span class="hello">Hello World!</span>
-								<span class="d-block">I'm Dahlton, and I love developing, mostly in JavaScript.</span>
+								<span class="d-block">I'm <span class="text-white">Dahlton</span>, and I love developing, mostly in JavaScript.</span>
 							</p>
-							<div onclick="scrollToID('about')">
-								<span class="scroll hvr-float-shadow">Scroll down or click me to learn more</span>
+							<div class="onTop" onclick="scrollToID('aboutMain')">
+								<span class="scroll hvr-float-shadow floating">Scroll down or click me to learn more</span>
 							</div>
 						</div>
 					</div>
@@ -58,38 +60,189 @@
 			</div>
 			<!-- Landing end -->
 			<!-- About beings -->
-			<div class="col">
+			<div class="col p-3">
 				<img class="aboutImage" src="images/undraw_hacker_mind_6y85.svg" alt="nerd" />
 			</div>
 			<div id="aboutMain" class="container-fluid">
-				<div id="about" class="row">
-					<div class="col-md-6 offset-md-3 mt-5">
-						<h2 class="pt-5">About me</h2>
-						<p>Here are a lot of words repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, thanks!</p>
+				<div class="row">
+					<div class="col-md-6 offset-md-3">
+						<h2 class="aboutTitle text-center">About me</h2>
+						<p class="lh-lg aboutText">
+							Hi there! My name is Dahlton and I'm 23 years old, I started taking learning web development seriously around a year and a half ago during my tier 2 technical support job. I have always loved learning different languages but never found one that really clicked with me, I first learned bash for scripting when I started using Linux in early middle school. I then branched out learning little bits of multiple languages to develop and solve any problem I faced, using Arduino/C to work with embedded electronics and develop my own weather sensors, and then Python for various web scraping projects and even an Oregon Trail type game! Eventually, I found my niche in web development, I started using languages and frameworks such as HTML5, CSS3, Vanilla Javascript, and the <span class="getInfo">MERN <span class="yourTooltip">MongoDB, ExpressJS, ReactJS, NodeJS</span> </span> stack for full stack development. I became passionate for web development for its wide range of capabilities and widespread usability, I often would run into the issue of accessibility with showing my projects to people that may have issues installing software, from then I found with web development I would be able to continue making the things I have been and still be able to share it with anyone with much more ease. I then knew I wanted to turn my hobby into my career, I took up a <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">bootcamp</a> taught by Colt Steele and while learning that I made my own projects along the way and learned the importance of <a href="https://github.com/Linkinlog"><i class="fa fa-github" aria-hidden="true"></i> Github</a>, I started trying to post daily to Github to keep my skills sharp and to continue in my pursuit of knowledge. I have a passion for learning overall and would love to pursue a life in web development. Please contact me below if you are interested in talking or working together!
+						</p>
 					</div>
 				</div>
 			</div>
 			<!-- About ends -->
 			<!-- Projects begin -->
-			<div class="col">
+			<div class="col p-3">
 				<img class="projectsImage" src="images/undraw_feeling_proud_qne1.svg" alt="projects" />
 			</div>
+			<div id="projectsLanding"></div>
 			<div id="projectsMain" class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 offset-md-3">
-						<h2>Projects</h2>
-						<p>Here are a lot of words repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, thanks!</p>
+					<div class="col">
+						<h2 class="text-center projectsTitle pb-4 font2">Finished Projects</h2>
+						<div class="container-fluid">
+							<div class="row row-cols-1 row-cols-md-2">
+								<div class="col font1 text-center">
+									<p class="projectsTitle">YelpCamp</p>
+									<p class="projectText">
+										YelpCamp is a project I made during my web development bootcamp by Colt Steele, this was among my first projects and I took a lot of time during the course to try and develop concepts before being taught to compare methods with the instructor. I worked on it using mongoDB both server and cloud to host the data for session, users, and the campgrounds. I integrated the MapAPI to have a nice custom map and deployed to Netlify.
+								</p></div>
+								<div class="col">
+									<div class="card projectCard shadow-blue mb-5 text-center">
+										<img src="/images/yelpcamp.png" class="card-img-top simpleShadow" alt="..." />
+										<div class="card-body">
+											<h5 class="card-title">Yelp Camp</h5>
+											<h6 class="card-subtitle mb-2 text-muted">Technologies used :</h6>
+											<div class="card-text">
+												<div class="container">
+													<div class="row row-cols-2 row-cols-xl-4 justify-content-around">
+														<img class="img languageIcon img-thumbnail" alt="mongoDB" src="https://img.icons8.com/color/96/000000/mongodb.png" />
+														<img class="img languageIcon img-thumbnail" alt="expressJS" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+														<img class="img languageIcon img-thumbnail" alt=nodeJS src="https://img.icons8.com/windows/96/000000/node-js.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col font1 text-center">
+									<div>
+										<p class="projectsTitle">
+											Contacts Keeper
+										</p>
+									</div>
+									<p class="projectText">
+										The contacts keeper is an app I made during my study of the course "React Front to Back" by Brad Traversy, I made it using a full MERN stack so I could have fully functioning user authentication, storage of said users contacts, and a nice interface for them to see. 
+									</p>
+								</div>
+								<div class="col">
+									<div class="card projectCard shadow-blue mb-5 text-center">
+										<img src="/images/CK.png" class="card-img-top simpleShadow" alt="..." />
+										<div class="card-body">
+											<h5 class="card-title">Contacts Keeper</h5>
+											<h6 class="card-subtitle mb-2 text-muted">Technologies used :</h6>
+											<div class="card-text">
+												<div class="container">
+													<div class="row row-cols-2 row-cols-xl-4 justify-content-around">
+														<img class="img languageIcon img-thumbnail" alt="mongoDB" src="https://img.icons8.com/color/96/000000/mongodb.png" />
+														<img class="img languageIcon img-thumbnail" alt="expressJS" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+														<img class="img languageIcon img-thumbnail" alt="react" src="https://img.icons8.com/plasticine/100/000000/react.png" />
+														<img class="img languageIcon img-thumbnail" alt=nodeJS src="https://img.icons8.com/windows/96/000000/node-js.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col font1 text-center">
+									<div>
+										<p class="projectsTitle">Github Search App</p>
+									</div>
+									<p class="projectText">
+										The github search app is another app I made during my study of the course by Brad Traversy, "React Front to Back", it uses the github API ad was my first experiment with React and a fun way to work with API's and make a basic front end app for interfacing with the Github API.
+									</p>
+								</div>
+								<div class="col">
+									<div class="card projectCard shadow-blue mb-5 text-center">
+										<img src="/images/github.png" class="card-img-top projectsImage simpleShadow" alt="..." />
+										<div class="card-body">
+											<h5 class="card-title">Contacts Keeper</h5>
+											<h6 class="card-subtitle mb-2 text-muted">Technologies used :</h6>
+											<div class="card-text">
+												<div class="container">
+													<div class="row row-cols-2 row-cols-xl-4 justify-content-around">
+														<img class="img languageIcon img-thumbnail" alt="react" src="https://img.icons8.com/plasticine/100/000000/react.png" />
+														<img class="img languageIcon img-thumbnail" alt=nodeJS src="https://img.icons8.com/windows/96/000000/node-js.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h2 class="text-center projectsTitle font2">Current Projects</h2>
+							<div class="container-fluid">
+								<div class="row row-cols-1 row-cols-md-2">
+									<div class="col font1 text-center">
+										<div>
+											<p class="projectsTitle">Built with Brains</p>
+										</div>
+										<p class="projectText">Built with Brains is the website I cam currently developing for the Built with Brains LLC, they aim at being a new fitnness and nutrition company and Built with Brains goal is to develop plans that fit your life and your needs so that you are set up for success in reaching the goals that have been set. One of the motto’s at BWB is that the best personal trainer is the one you don’t have for the rest of your life. </p>
+									</div>
+									<div class="col">
+										<div class="card projectCard shadow-blue mb-5 text-center">
+											<img src="/images/BWBpng.png" class="card-img-top simpleShadow" alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Built with Brains</h5>
+												<h6 class="card-subtitle mb-2 text-muted">Technologies used :</h6>
+												<div class="card-text">
+													<div class="container">
+														<div class="row row-cols-2 row-cols-xl-4 justify-content-around">
+															<img class="img languageIcon img-thumbnail" alt="mongoDB" src="https://img.icons8.com/color/96/000000/mongodb.png" />
+															<img class="img languageIcon img-thumbnail" alt="expressJS" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+															<img class="img languageIcon img-thumbnail" alt="react" src="https://img.icons8.com/plasticine/100/000000/react.png" />
+															<img class="img languageIcon img-thumbnail" alt=nodeJS src="https://img.icons8.com/windows/96/000000/node-js.png" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col font1 text-center">
+										<div>
+											<p class="projectsTitle">The Wirth Homestead (<span class="text-danger">Private development</span>)</p>
+										</div>
+										<p class="projectText">The Wirth Homestead is a blogging and e-commerce website I am working on for the Wirth family to get their word out there and to get a successful blogging website for them. I used the full MERN stack to work with user authentication as well as storing the blog posts in a cloud database.</p>
+									</div>
+									<div class="col">
+										<div class="card projectCard shadow-blue mb-5 text-center">
+											<img src="/images/Wirth.png" class="card-img-top simpleShadow" alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">The Wirth Homestead blog</h5>
+												<h6 class="card-subtitle mb-2 text-muted">Technologies used :</h6>
+												<div class="card-text">
+													<div class="container">
+														<div class="row row-cols-2 row-cols-xl-4 justify-content-around">
+															<img class="img languageIcon img-thumbnail" alt="mongoDB" src="https://img.icons8.com/color/96/000000/mongodb.png" />
+															<img class="img languageIcon img-thumbnail" alt="expressJS" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+															<img class="img languageIcon img-thumbnail" alt="react" src="https://img.icons8.com/plasticine/100/000000/react.png" />
+															<img class="img languageIcon img-thumbnail" alt=nodeJS src="https://img.icons8.com/windows/96/000000/node-js.png" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Projects end -->
+			<!-- Languages begin -->
+			<div class="col p-3">
+				<img class="languagesImage" src="images/undraw_static_assets_rpm6.svg" alt="languages" />
+			</div>
+			<div id="languagesMain" class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 offset-md-3 pt-2">
+						<h2>Languages</h2>
+						<p>Here are a lot of words repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, thanks!</p>
+					</div>
+				</div>
+			</div>
+			<!-- Languages end -->
 			<!-- Contact begin -->
-			<div class="col">
+			<div class="col p-3">
 				<img class="contactImage" src="images/undraw_contact_us_15o2.svg" alt="contact" />
 			</div>
 			<div id="contactMain" class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 offset-md-3">
+					<div class="col-md-6 offset-md-3 pt-2">
 						<h2>Contact Me</h2>
 						<p>Here are a lot of words repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, repeating about me, thanks!</p>
 					</div>
