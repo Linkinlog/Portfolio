@@ -370,8 +370,12 @@ img.projectsImage {
 	background: rgb(244, 162, 97);
 }
 .skillsTitle {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	padding-top: 5rem;
+}
+
+.skillsText {
+	font-size: 2rem;
 }
 
 img.SkillsImage {
