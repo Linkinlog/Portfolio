@@ -394,4 +394,7 @@ img.contactImage {
 	min-height: 50vh;
 	width: 100%;
 }
+.contactForm {
+	background: white;
+}
 /* End Contact portion */
