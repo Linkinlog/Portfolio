@@ -313,6 +313,15 @@ img.SkillsImage {
 	min-height: 50vh;
 	width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+	.skillsTitle {
+		font-size: 1.75rem;
+	}
+	.skillsText {
+		font-size: 1rem;
+	}
+}
 /* End Skills portion */
 /* Contact portion */
 #contactMain {
