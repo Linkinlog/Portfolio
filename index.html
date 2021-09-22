@@ -18,9 +18,9 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<ul onclick="closeNav()">
 				<li><a href="#landing">Home</a></li>
+				<li><a href="#projectsMain">Projects</a></li>
+				<li><a href="#skillsMain">Skills</a></li>
 				<li><a href="#aboutMain">About Me</a></li>
-				<li><a href="#projectsLanding">Projects</a></li>
-				<li><a href="#SkillsMain">Skills</a></li>
 				<li><a href="#contactMain">Contact Me</a></li>
 			</ul>
 		</div>
@@ -40,7 +40,7 @@
 		<div class="p-0" id="main">
 			<div id="fade"></div>
 			<!-- Landing start -->
-			<div id="landing" class="container-fluid">
+			<section id="landing" class="container-fluid">
 				<div class="row px-4 wrapper">
 					<div class="col-md-7 offset-md-1">
 						<div>
@@ -57,14 +57,14 @@
 						<img class="code-img" src="images/undraw_Code_thinking_re_gka2-cropped.svg" alt="thinking" />
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Landing end -->
 			<!-- Projects begin -->
 			<div class="col p-3">
 				<img class="projectsImage" src="images/undraw_feeling_proud_qne1.svg" alt="projects" />
 			</div>
 			<div id="projectsLanding"></div>
-			<div id="projectsMain" class="container-fluid">
+			<section id="projectsMain" class="container-fluid">
 				<div class="row">
 					<div class="col">
 						<h2 class="text-center projectsTitle pb-4 font2">
@@ -221,26 +221,28 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Projects end -->
 			<!-- Skills begin -->
 			<div class="col p-3">
 				<img class="SkillsImage" src="images/undraw_static_assets_rpm6.svg" alt="Skills" />
 			</div>
-			<div id="SkillsMain" class="container-fluid">
+			<div id="skillsLanding"></div>
+			<section id="skillsMain" class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 offset-md-3 pt-2">
 						<h2 class="text-center skillsTitle font2 pt-4">Skills</h2>
 						<p class="skillsText font1">Javascript, HTML5, CSS3, Node.JS, Express.JS, React.JS, MongoDB, Git and Github, Server Management, Network Administration, Embedded Electronics, Arduino, Python.</p>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Skills end -->
 			<!-- About begins -->
 			<div class="col p-3">
 				<img class="aboutImage" src="images/undraw_hacker_mind_6y85.svg" alt="nerd" />
 			</div>
-			<div id="aboutMain" class="container-fluid">
+			<div id="aboutLanding"></div>
+			<section id="aboutMain" class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 offset-md-3">
 						<h2 class="aboutTitle text-center">About me</h2>
@@ -249,13 +251,14 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- About ends -->
 			<!-- Contact begin -->
 			<div class="col p-3">
 				<img class="contactImage" src="images/undraw_contact_us_15o2.svg" alt="contact" />
 			</div>
-			<div id="contactMain" class="container-fluid">
+			<div id="contactLanding"></div>
+			<section id="contactMain" class="container-fluid">
 				<div class="row">
 					<div class="col-md-4 offset-md-4 pt-4 text-center">
 						<div class="simpleShadow contactForm rounded rounded-3 p-4">
@@ -277,7 +280,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Contact end -->
 		</div>
 		<script src="app.js"></script>

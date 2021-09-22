@@ -180,6 +180,19 @@ a {
 	color: #f1f1f1;
 }
 
+.sidenav li {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav li:hover {
+	color: #f1f1f1;
+}
+
 .sidenav .closebtn {
 	position: absolute;
 	top: 0;
@@ -366,7 +379,7 @@ img.projectsImage {
 
 /* End Projects portion */
 /* Skills portion */
-#SkillsMain {
+#skillsMain {
 	background: rgb(244, 162, 97);
 }
 .skillsTitle {
