@@ -95,12 +95,12 @@ body {
 	opacity: 1;
 }
 
-p a {
-	color: initial;
-}
-
 p a:hover {
 	color: red;
+}
+
+a {
+	color: initial
 }
 
 /* To top button */
