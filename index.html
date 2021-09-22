@@ -13,23 +13,25 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<!-- Nav collapsed start -->
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<ul onclick="closeNav()">
-				<li><a href="#landing">Home</a></li>
-				<li><a href="#projectsMain">Projects</a></li>
-				<li><a href="#skillsMain">Skills</a></li>
-				<li><a href="#aboutMain">About Me</a></li>
-				<li><a href="#contactMain">Contact Me</a></li>
-			</ul>
-		</div>
-		<!-- Nav collapsed end -->
-		<!-- Nav toggle button -->
-		<div onclick="openNav()" class="navBtnCircle">
-			<img src="images/icon.png" alt="" class="navBtn" srcset="" />
-		</div>
-		<!-- Nav toggle button end  -->
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="/images/icon.png" alt="logo"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div id="navList" class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#landing">Home</a>
+						<a class="nav-link" href="#projectsLanding">Projects</a>
+						<a class="nav-link" href="#skillsLanding">Skills</a>
+						<a class="nav-link" href="#aboutLanding">About Me</a>
+						<a class="nav-link" href="#contactLanding">Contact Me</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav End -->
 		<!-- To top button -->
 		<a href="#landing">
 			<div class="toTopBtnCircle">
@@ -41,15 +43,17 @@
 			<div id="fade"></div>
 			<!-- Landing start -->
 			<section id="landing" class="container-fluid">
-				<div class="row px-4 wrapper">
+				<div class="row px-4">
 					<div class="col-md-7 offset-md-1">
 						<div>
 							<p class="welcomeText">
 								<span class="hello">Hello World!</span>
 								<span class="d-block">I'm <span class="text-white">Dahlton</span>, and I love developing, mostly in JavaScript.</span>
 							</p>
-							<div class="onTop" onclick="scrollToID('aboutMain')">
-								<span class="scroll hvr-float-shadow floating">Scroll down or click me to learn more</span>
+							<div class="onTop">
+								<a href="#aboutLanding">
+									<span class="scroll hvr-float-shadow floating">Scroll down or click me to learn more</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -230,8 +234,8 @@
 			<div id="skillsLanding"></div>
 			<section id="skillsMain" class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 offset-md-3 pt-2 text-center">
-						<h2 class="skillsTitle font2 pt-4">Skills</h2>
+					<div class="col-md-6 offset-md-3 text-center">
+						<h2 class="skillsTitle font2">Skills</h2>
 						<p class="skillsText font1">Javascript, HTML5, CSS3, Node.JS, Express.JS, React.JS, MongoDB, Git and Github, Server Management, Network Administration, Embedded Electronics, Arduino, Python.</p>
 					</div>
 				</div>
@@ -265,13 +269,13 @@
 							<h2 class="font2">Contact Me</h2>
 							<form name="contact" method="POST" data-netlify="true">
 								<p>
-									<label class="form-label">Your Name: <input class="form-control" type="text" name="name" /></label>
+									<label class="form-label">Your Name: <input class="form-control" type="text" name="name"  required/></label>
 								</p>
 								<p>
-									<label class="form-label">Your Email: <input class="form-control" type="email" name="email" /></label>
+									<label class="form-label">Your Email: <input class="form-control" type="email" name="email"  required/></label>
 								</p>
 								<p>
-									<label class="form-label">Message: <textarea class="form-control" name="message"></textarea></label>
+									<label class="form-label">Message: <textarea class="form-control" name="message" required></textarea></label>
 								</p>
 								<p>
 									<button class="btn btn-info" type="submit">Send</button>

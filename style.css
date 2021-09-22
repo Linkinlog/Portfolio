@@ -126,96 +126,6 @@ a {
 	z-index: 9;
 }
 
-/* Nav start */
-
-.navBtn {
-	cursor: pointer;
-}
-
-.navBtnCircle {
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	display: block;
-	height: 85px;
-	width: 85px;
-	line-height: 85px;
-	-moz-border-radius: 55px;
-	border-radius: 55px;
-	background-color: var(--main-dark-color);
-	opacity: 0.5;
-	color: white;
-	text-align: center;
-	font-size: 2em;
-	z-index: 9;
-}
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: var(--main-dark-color);
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
-	z-index: 10;
-}
-
-.sidenav ul {
-	list-style-type: none;
-}
-
-.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
-.sidenav li {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-
-.sidenav li:hover {
-	color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-}
-
-#main {
-	transition: margin-left 0.5s;
-	padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-	}
-	.sidenav a {
-		font-size: 18px;
-	}
-}
-
-/* Nav End */
 
 /* Landing portion */
 
@@ -225,7 +135,7 @@ a {
 }
 
 .wrapper {
-	position: relative;
+	position: absolute;
 }
 
 p.welcomeText {
@@ -268,7 +178,7 @@ img.code-img {
 		font-size: 1.5rem;
 	}
 	span.hello {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		display: block;
 		padding-left: 15%;
 	}
@@ -344,14 +254,23 @@ img.aboutImage {
 }
 
 .aboutTitle {
+	padding-top: 5rem;
 	font-family: 'Neucha', cursive;
 	font-size: 3rem;
-	padding-top: 5rem;
 }
 
 .aboutText {
 	font-family: 'Patrick Hand', cursive;
 	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.aboutText{
+		font-size: 1rem
+	}
+	.aboutTitle{
+		font-size: 2rem
+	}
 }
 /* End About portion */
 /* Projects portion */
@@ -376,6 +295,16 @@ img.projectsImage {
 	max-height: 50px;
 	max-width: 100px;
 }
+
+@media only screen and (max-width: 768px) {
+	.projectText{
+		font-size: 1rem
+	}
+	.projectsTitle{
+		font-size: 2rem
+	}
+}
+
 
 /* End Projects portion */
 /* Skills portion */
@@ -409,5 +338,6 @@ img.contactImage {
 }
 .contactForm {
 	background: white;
+	margin-top: 5rem;
 }
 /* End Contact portion */
