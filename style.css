@@ -12,7 +12,6 @@ body {
 }
 .font2 {
 	font-family: 'Neucha', cursive;
-
 }
 
 .shadow-blue {
@@ -88,7 +87,7 @@ p a:hover {
 }
 
 a {
-	color: initial
+	color: unset;
 }
 
 /* To top button */
@@ -114,7 +113,6 @@ a {
 	z-index: 9;
 }
 
-
 /* Landing portion */
 
 #landing {
@@ -127,7 +125,7 @@ a {
 }
 
 p.welcomeText {
-	margin-top: 10rem;
+	padding-top: 20%;
 	font-family: 'Patrick Hand', cursive;
 	font-size: 5rem;
 }
@@ -156,9 +154,14 @@ img.code-img {
 	width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1200px) {
 	p.welcomeText {
-		margin-top: 5rem;
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	p.welcomeText {
 		font-family: 'Patrick Hand', cursive;
 		font-size: 2.25rem;
 	}
@@ -253,11 +256,11 @@ img.aboutImage {
 }
 
 @media only screen and (max-width: 768px) {
-	.aboutText{
-		font-size: 1rem
+	.aboutText {
+		font-size: 1rem;
 	}
-	.aboutTitle{
-		font-size: 2rem
+	.aboutTitle {
+		font-size: 2rem;
 	}
 }
 /* End About portion */
@@ -285,14 +288,13 @@ img.projectsImage {
 }
 
 @media only screen and (max-width: 768px) {
-	.projectText{
-		font-size: 1rem
+	.projectText {
+		font-size: 1rem;
 	}
-	.projectsTitle{
-		font-size: 2rem
+	.projectsTitle {
+		font-size: 2rem;
 	}
 }
-
 
 /* End Projects portion */
 /* Skills portion */
