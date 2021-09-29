@@ -278,6 +278,10 @@ img.projectsImage {
 	padding-top: 5rem;
 }
 
+.projectCard {
+	margin-top: 10rem;
+}
+
 .projectText {
 	font-size: 2rem;
 }
