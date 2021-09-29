@@ -298,6 +298,9 @@ img.projectsImage {
 	.projectsTitle {
 		font-size: 2rem;
 	}
+	.projectCard {
+		margin-top: revert;
+	}
 }
 
 /* End Projects portion */
